@@ -2,7 +2,6 @@ import axios from 'axios';
 import { getStoredAccessToken, setStoredAccessToken } from './authToken';
 import { refreshAccessToken } from '@/api/auth';
 
-console.log(import.meta.env.VITE_API_URL);
 
 
 const api = axios.create({

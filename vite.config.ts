@@ -8,9 +8,6 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vitejs.dev/config/
 // https://vitejs.dev/config/
 export default defineConfig({
-  define: {
-    'import.meta.env.VITE_API_URL': JSON.stringify('http://localhost:8080')
-  },
   plugins: [
     tanstackRouter({
       target: 'react',
