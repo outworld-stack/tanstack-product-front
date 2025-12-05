@@ -1,7 +1,7 @@
 import type { Product } from "@/types";
 import{Link} from "@tanstack/react-router";
 
-const ProductCard = ({ product, button = true }: { product: Product, button?: boolean }) => {
+const ProductCard = ({ product}: { product: Product }) => {
     return (
 
         <div className='rounded-md shadow-sm p-4'>
