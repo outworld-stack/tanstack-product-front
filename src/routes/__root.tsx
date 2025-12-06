@@ -21,7 +21,7 @@ export const Route = createRootRouteWithContext<RouterContext>()({
         content: 'یه مثال ساده از tanstack router',
       },
       {
-        title: 'یه مثال ساده از tanstack router',
+        title: 'product seller',
       }
     ],
   }),

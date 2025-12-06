@@ -16,6 +16,17 @@ const productQueryOptions = (productId: string) => queryOptions({
 });
 
 export const Route = createFileRoute('/products/$productId/')({
+    head: () => ({
+    meta: [
+      {
+        name: 'description',
+        content: 'محصول ها',
+      },
+      {
+        title: 'محصول',
+      },
+    ],
+  }),
   component: ProductDetailsPage,
   errorComponent: NotFound,
   loader: async ({ params, context: { queryClient } }) => {

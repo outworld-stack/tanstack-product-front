@@ -6,6 +6,17 @@ import { createProduct } from '@/api/products';
 
 
 export const Route = createFileRoute('/products/new/')({
+  head: () => ({
+    meta: [
+      {
+        name: 'description',
+        content: 'محصول جدید',
+      },
+      {
+        title: 'اضافه کردن محصول',
+      },
+    ],
+  }),
   component: NewProductPage,
 })
 
